@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils';
 import React, { forwardRef } from 'react'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+interface ButtonProps extends React.ComponentPropsWithRef<"button"> {}
 
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
