@@ -18,7 +18,7 @@ export default function ModalProvider() {
 
   return (
     <>
-    <PreviewModal />
-  </>
+      <PreviewModal />
+    </>
   )
 }
