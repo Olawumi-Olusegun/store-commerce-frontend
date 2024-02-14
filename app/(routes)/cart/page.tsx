@@ -25,6 +25,7 @@ export default function CartPage() {
             <div className="px-4 py-16 sm:px-6 lg:px-8 ">
                 <h1 className="text-3xl font-bold text-black">Shopping Cart</h1>
                 <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start gap-x-12">
+                    <div className="lg:col-span-7">
                     { cart.items.length === 0 
                     ? <p className='text-center text-neutral-500 p-2 lg:p-4'>No items added to cart</p>
                     : null 
@@ -32,6 +33,8 @@ export default function CartPage() {
                     <ul className=''>
                         {cart.items.map((item) => <CartItem key={item.id} data={item} />)}
                     </ul>
+                    </div>
+                    <Summary />
                 </div>
             </div>
         </Container>
